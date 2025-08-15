@@ -10,6 +10,22 @@ public class Produto {
     public int unidade;
     public String marca;
 
+    // GET - PEGAR
+    public String getNome() {
+        return nome;
+    }
+    // SET - DEFINIR, MUDAR
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    // Construtor
+    public Produto(String nome, double preco, String marca, double tamanho){
+        this.nome = nome;
+        this.preco = preco;
+        this.marca = marca;
+        this.tamanho = tamanho;
+    }
 
     // 2 - Método
     // Mostrar informacao do Produto

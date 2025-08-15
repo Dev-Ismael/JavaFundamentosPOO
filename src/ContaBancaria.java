@@ -1,11 +1,16 @@
 public class ContaBancaria {
     // ///////EX4
     // Atributo
-    public String nome;
-    public int saldo;
+    public String titular;
+    public double saldo;
 
     // Metodos
-    public void depositar(){
-
+    public void depositar(double valor){
+        saldo = saldo + valor;
+// OU assim    saldo += valor;
+        // -=, *=, /=
+    }
+    public void sacar(double valor){
+        saldo -= valor;
     }
 }

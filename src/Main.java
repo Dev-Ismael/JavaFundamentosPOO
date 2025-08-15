@@ -9,29 +9,21 @@ public class Main {
 
         // OBJETO
         // TIPO NOME = new TIPO();
-        Produto prod1 = new Produto();
+        Produto prod1 = new Produto("Monitor", 800, "Dell", 80);
         //             Instanciar a Classe
-        prod1.nome = "Monitor";
-        prod1.preco = 850.00;
-        prod1.marca = "Dell";
 
         prod1.mostrarInformacoes();
 
-        Produto prod2 = new Produto();
+        Produto prod2 = new Produto("Notebook", 3000, "Dell", 100);
 
-        prod2.nome = "Notebook";
-        prod2.preco = 3000.00;
-        prod2.marca = "Dell";
 
         prod2.mostrarInformacoes();
 
 
         // //////// Ex1
         // OBJETO
-        Musica musica1 = new Musica();
-        musica1.titulo = "Barbie";
-        musica1.artista = "Tutu";
-        musica1.duracaoEmSegundos = 321;
+        Musica musica1 = new Musica("Barbie", "Tutu", 321);
+
 
         System.out.println(musica1.titulo);
         System.out.println(musica1.artista);
@@ -39,31 +31,52 @@ public class Main {
 
         // /////////EX2
         // OBJETO
-        Carro carro1 = new Carro();
-        carro1.marca = "Fiat";
+        Carro carro1 = new Carro("Fiat", "Uno", "Branco");
+
+        // Ou Assim
+        /*carro1.marca = "Fiat";
         carro1.modelo = "Uno";
-        carro1.descricao = "Branco";
+        carro1.descricao = "Branco";*/
 
         carro1.mostrarInformacoes();
 
-        Carro carro2 = new Carro();
-        carro2.marca = "Honda";
+        Carro carro2 = new Carro("Honda", "Fit", "Vermelho");
+
+        //Ou assim
+        /*carro2.marca = "Honda";
         carro2.modelo = "Fit";
-        carro2.descricao = "Vermelho";
+        carro2.descricao = "Vermelho";*/
 
         carro2.mostrarInformacoes();
 
         // /////////Ex3
 
-        Aluno aluno1 = new Aluno();
-        aluno1.nome = "Joao";
-        aluno1.nota = 5.80;
+        Aluno aluno1 = new Aluno("Joao", 5.80);
+
+        // Ou assim
+        /*aluno1.nome = "Joao";
+        aluno1.nota = 5.80;*/
         aluno1.verificarStatus();
 
-        Aluno aluno2 = new Aluno();
-        aluno2.nome = "Maria";
-        aluno2.nota = 7;
+        Aluno aluno2 = new Aluno("Maria", 7);
+
+        // Ou assim
+        /*aluno2.nome = "Maria";
+        aluno2.nota = 7;*/
         aluno2.verificarStatus();
+
+
+        // /////////Ex4
+
+        ContaBancaria conta = new ContaBancaria();
+
+        conta.saldo = 3000;
+        conta.titular = "Ismael";
+
+        conta.depositar(500);
+        conta.sacar(200);
+
+        System.out.println(conta.saldo);
 
     }
 }

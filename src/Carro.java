@@ -6,6 +6,13 @@ public class Carro {
     public String modelo;
     public String descricao;
 
+    // Construtores
+    public Carro(String marca, String modelo, String descricao) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.descricao = descricao;
+    }
+
     // Metodos
     public void mostrarInformacoes(){
         System.out.println("Marca: " + marca);
